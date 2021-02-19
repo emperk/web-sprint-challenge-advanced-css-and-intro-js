@@ -220,7 +220,9 @@ console.log(artists[2].bio);
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+artists[8].name = 'Vincent van Gogh';
 
+console.log(artists[8]);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -233,6 +235,7 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 function getArtistByIndex(/*Your Code Here*/) {
   /*Your Code Here*/
 }  
+
 
 
 
