@@ -19,10 +19,44 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
-/*GENERAL STYLES*/
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing:border-box;
+    max-width:100%; /*you can never be bigger than your parent - this is going to stop that dreaded horizontal scroll bar*/
+    border:1px solid grey;
+}
+
+
+*GENERAL STYLES*/
 html{
     font-size:62.5%;
 }
+
+
+
 body{
     font-size:1.6rem;
     line-height: 1.5;
@@ -86,6 +120,7 @@ nav span{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 .title-container div {	
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
@@ -134,3 +169,36 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+@media(max-width: 501px) {
+
+    body {
+        background-color: green;
+    }
+    
+    .title-container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .title-container div {	
+        font-size: 2rem;
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
+        background-position: center;	
+        color: white;	
+        /* width:80%; */
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height:60vh; */
+        /* margin:5% 0; */
+    }	
+
+    /* .title-container hr{
+        /* width:80%; */
+    } */
+
+
