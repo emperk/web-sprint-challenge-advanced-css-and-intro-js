@@ -43,12 +43,6 @@ table {
 	border-spacing: 0;
 }
 
-/* * {
-    box-sizing:border-box;
-    max-width:100%; /*you can never be bigger than your parent - this is going to stop that dreaded horizontal scroll bar*/
-    border:1px solid hotpink;
-} */
-
 
 /*GENERAL STYLES*/
 html{
