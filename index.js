@@ -397,10 +397,32 @@ console.log('RANDOMIZED ARRAY: ', randomize(numArr));
  /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
  Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 
-function bornInTwenty(/*arr*/) {
+// function bornInTwenty(arr) {
 
-}
+// }
+
+// {
+//   "id": 18,
+//   "name": "El Greco",
+//   "years": "1541 - 1614",
+//   "genre": "Mannerism",
+//   "nationality": "Spanish,Greek",
+//   "bio": "Doménikos Theotokópoulos (Greek: Δομήνικος Θεοτοκόπουλος [ðoˈminikos θeotoˈkopulos]; October 1541 –  7 April 1614), most widely known as El Greco (\"The Greek\"), was a painter, sculptor and architect of the Spanish Renaissance. \"El Greco\" was a nickname, a reference to his Greek origin, and the artist normally signed his paintings with his full birth name in Greek letters, Δομήνικος Θεοτοκόπουλος, Doménikos Theotokópoulos, often adding the word Κρής Krēs, Cretan.",
+//   "wikipedia": "http://en.wikipedia.org/wiki/El_Greco",
+//   "paintings": 87
+// }
  
+// const bornInTwenty = artists.filter((years) => {
+//   return ["name"]["years"] > "1900";
+// });
+
+// console.log(bornInTwenty);
+
+let bornInTwenty = artists.filter(function(name){
+  return name.years > "1900";
+})
+
+console.log("ARTISTS BORN IN 20TH CENTURY: ",bornInTwenty);
  
  
  /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
