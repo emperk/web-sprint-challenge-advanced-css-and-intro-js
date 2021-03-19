@@ -287,10 +287,22 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+const anotherArtist = { 
+  id: 20,
+  name: "Emily Perkins", 
+  years: "2001 - 2021",
+  genre: "Web Design", 
+  nationality: "American",
+  bio: "Lorem ipsum"
+}
 
+function addArtist(arr, obj){
+  const newArr = arr;
+  arr.push(obj);
+  return newArr;
+}
+
+console.log(addArtist(artists, anotherArtist));
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
