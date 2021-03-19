@@ -222,7 +222,7 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 
 artists[8].name = 'Vincent van Gogh';
 
-console.log(artists);
+// console.log(artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -233,9 +233,10 @@ console.log(artists);
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*arr, num*/) {
-  /*Your Code Here*/
-}  
+function getArtistByIndex(arr, num) {
+  return `the artist at index ${arr[num].id} is ${arr[num].name}`;
+}
+console.log(getArtistByIndex(artists, 0));  
 
 
 
