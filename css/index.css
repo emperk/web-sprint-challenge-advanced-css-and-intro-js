@@ -135,9 +135,11 @@ button:hover{
     width:100%;
 }
 
+/*    ALL RESPONSIVE DESIGNING BELOW          */
+
 @media(max-width: 500px) {
 
-/*    HEADER STYLES      */
+/*    HEADER RESPONSIVE STYLES      */
 
 nav {
     width: 43%;
@@ -151,11 +153,8 @@ nav span {
     border-left: 1px solid #626262;
 }
 
-/*    TITLE-CONTAINER STYLES      */
+/*    TITLE-CONTAINER RESPONSIVE STYLES      */
 
-.title-container {
-
-}
 
 .title-container div {
     width: 100%;
@@ -176,5 +175,43 @@ button {
     transition: 1s;
 }
 
+/*  ARTIST-CONTAINER RESPONSIVE STYLES            */
+
+.artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 4%;
+    margin-bottom: 10%;
+}
+
+.artist {
+    width: 100%;
+}
+
+.artist img {
+    width: 25rem;
+    padding-bottom: 2%;
+}
+
+img {
+    height: 21rem;
+}
+
+.artist-title {
+    font-size: 2rem;
+}
+
+div.bio {
+    width: 37rem;
+    line-height: 1;
+}
+
+#last-artist {
+    padding: 10%;
+}
 
 }
